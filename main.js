@@ -1,13 +1,14 @@
 // Función para aplicar los estilos del lado oscuro
 function activateDarkSide() {
     // Cambia los estilos del body y otros elementos a los estilos del lado oscuro
-    document.body.style.backgroundColor = "#6c102b";
-    document.body.style.color = "#000";
-    document.nav.style.backgroundColor = "#6c102b";
-    document.nav.style.color = "#000";
-    // Agrega otras modificaciones de estilo necesarias para el lado oscuro
-  }
-  
+    document.body.style.backgroundColor = "#0a0a0a";
+    document.body.style.color = "#ff0000";
+    document.nav.style.backgroundColor = "#0a0a0a";
+    document.nav.style.color = "#ff0000";
+    //reemplazar imagen de fondo
+    document.image.src = './imagenes/sith knigths.jpg'
+}
+ 
   // Función para aplicar los estilos del lado de la fuerza
   function activateLightSide() {
     // Restaura los estilos del body y otros elementos al lado de la fuerza
@@ -19,7 +20,7 @@ function activateDarkSide() {
   }
   
   // Función para cambiar entre el lado oscuro y el lado de la fuerza
-  function toggleDarkSide() {
+  function cambiarDarkSide() {
     // Verifica si el modo oscuro está activado o no
     const isDarkSide = localStorage.getItem("darkSide") === "true";
   
@@ -33,8 +34,8 @@ function activateDarkSide() {
     }
   }
   
-  // Evento de clic para cambiar entre el modo oscuro y el modo claro cuando se hace clic en el botón
-  document.getElementById("toggle-dark-mode").addEventListener("click", toggleDarkSide);
+  // Evento de click para cambiar entre el modo oscuro y el modo claro cuando se hace clic en el botón
+  document.getElementById("cambiar-dark-side").addEventListener("click", cambiarDarkSide);
   
   // Verifica la preferencia del usuario al cargar la página y aplica los estilos correspondientes
   const isDarkSide = localStorage.getItem("darkSide") === "true";

@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../pages.css/biblioteca.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg" class="nav">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">STAR-WARS</a>
+              <a class="navbar-brand" href="../index.html"><img src="../imagenes/favicon-32x32.png" alt="logoStarWars">STAR-WARS</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -38,16 +38,23 @@
             </div>
           </nav> 
     </header>
-    <section>
-      <div class="bienvenida">
-        <h2 id="bienvenida"></h2>
-        <p>a nuestra biblioteca yo soy el Padawan Luck Agber y voy a enseñarte un poco sobre nuestros personajes. </p>
-    </div>  
-    </section>   
-    <section>
+    <div class="main">
+      <section>
+        <p>a nuestra biblioteca yo soy el Padawan Luck Agber y voy a enseñarte un poco sobre nuestros personajes. </p>  
+      </section>   
+      <section>
         <h1>Biblioteca del templo Jedi</h1>
             <img src="../imagenes/Jedi_Archives.webp" alt="imagen de fondo de biblioteca jedi">
-    </section>
+      </section>
+      <section>
+        <form action="../JS.pages/biblioteca.js">
+          <label for="Busqueda">ingrese el nombre del personaje que desee conocer</label>
+          <input type="text" placeholder="Ej. Anakin Skywalker">
+          <button type="submit">Buscar</button>
+        </form>
+      </section>
+    </div>
+   
     <script src="../JS.pages/biblioteca.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>  
 </body>

@@ -6,7 +6,11 @@ img {
 body {
     background-color: #333;
     color: #fff;
-  }    
+  }   
+  .nav{
+    background-color: #333;
+    color: #fff;
+}
 .seccion1{
     display: flex;
     justify-content: space-between;
@@ -17,10 +21,4 @@ body {
     justify-content: center;
     text-align: center;
     margin: 20px;
-}
-.bienvenida{
-    display: none;
-    background-color: cyan;
-    padding: 20px;
-    text-align: center;
 }

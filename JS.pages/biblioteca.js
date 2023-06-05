@@ -1,3 +1,12 @@
+// Verifica la preferencia del usuario al cargar la página y aplica los estilos correspondientes
+const isDarkSide = localStorage.getItem("darkSide") === "true";
+if (isDarkSide) {
+  activateDarkSide();
+} else {
+  activateLightSide();
+} 
+
+
 window.addEventListener("load", function() {
     let usuarioData = localStorage.getItem("usuarioData");
     
@@ -8,6 +17,8 @@ window.addEventListener("load", function() {
         document.getElementById("bienvenida").innerText = "¡Bienvenido/a " + usuario.nombre + " " + usuario.apellido + "!";
     }
   });
+  //damos bienvenida con datos de usuario introducidos en el storage
+
 
 //creamos arrays de objetos de personajes
   const misPersonajes = [
@@ -45,7 +56,7 @@ window.addEventListener("load", function() {
 },
 ];
 //pedimos a usuario que elija su personaje 
-const personajeElejidoPorUsuario = prompt("Ingrese a quién desea conocer:\n- AnakinSkywalker\n- Obi-Wan Kenobi\n- Darth Sidious");
+/*const personajeElejidoPorUsuario = prompt("Ingrese a quién desea conocer:\n- AnakinSkywalker\n- Obi-Wan Kenobi\n- Darth Sidious");
 //buscamos el personaje en el array y lo mostramos segun eleccion de usuario
 const personajeEncontrado = misPersonajes.find((item) => item.nombre.toLowerCase() ===
 personajeElejidoPorUsuario.toLowerCase());
@@ -64,11 +75,11 @@ let mensaje = `
     alert(mensaje);
 } else {
     alert("No se encontró el personaje solicitado.");
-}
+}*/
+
 //funcion de despedida
     function despedida() {
     let mensaje = `Gracias ${nombre} por elegirnos para seguir aprendiendo sobre Star Wars.`;
     alert(mensaje);
 }
 despedida();
-  
