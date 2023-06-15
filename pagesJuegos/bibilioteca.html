@@ -9,52 +9,23 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg" class="nav">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img src="../imagenes/favicon-32x32.png" alt="logoStarWars">STAR-WARS</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./ping-pong.index.html">PING-PONG</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./bibilioteca.html">BIBLIOTECA</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">MEMORIA STAR WARS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">VUELA EL X-WING</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">SOBRE NOSOTROS</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav> 
-    </header>
     <div class="main">
       <section>
         <p>a nuestra biblioteca yo soy el Padawan Luck Agber y voy a enseñarte un poco sobre nuestros personajes. </p>  
       </section>   
       <section>
         <h1>Biblioteca del templo Jedi</h1>
-            <img src="../imagenes/Jedi_Archives.webp" alt="imagen de fondo de biblioteca jedi">
+        <img src="../imagenes/Jedi_Archives.webp" alt="imagen de fondo de biblioteca jedi">
       </section>
       <section>
-        <form action="../JS.pages/biblioteca.js">
-          <label for="Busqueda">ingrese el nombre del personaje que desee conocer</label>
-          <input type="text" placeholder="Ej. Anakin Skywalker">
-          <button type="submit">Buscar</button>
+        <form id="formulario">
+          <label for="Busqueda">Ingrese el nombre del personaje que desee conocer</label>
+          <input type="text" placeholder="Ej. Anakin Skywalker" id="personajeInput">
+          <button id="personajeInput" type="submit">Buscar</button>
         </form>
       </section>
     </div>
-   
+    <div id="resultado"></div>
     <script src="../JS.pages/biblioteca.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>  
 </body>

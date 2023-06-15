@@ -1,43 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>STARWARS</title>
+    <title>Cuánto sabes de Star Wars?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="body">
+<body>
     <header>
-        <nav class="navbar navbar-expand-lg" class="nav">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">STAR-WARS</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./ping-pong.index.html">PING-PONG</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./bibilioteca.html">BIBLIOTECA</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">MEMORIA STAR WARS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">VUELA EL X-WING</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">SOBRE NOSOTROS</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav> 
+        <h1>Cuanto sabes de Star Wars</h1>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-toggle">
+            <label for="theme-toggle"></label>
+        </div>
     </header>
-    <h1>PING-PONG DE STAR WARS</h1>
+    <main>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Star Wars Quiz</title>
+          <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+          <div class="container">
+            <header>
+              <h1>Star Wars Quiz</h1>
+              <div class="theme-toggle">
+                <input type="checkbox" id="theme-toggle">
+                <label for="theme-toggle">Toggle Theme</label>
+              </div>
+            </header>
+            <main>
+              <div id="quiz-container">
+                <div id="question-container">
+                  <h2 id="question"></h2>
+                </div>
+                <div id="options-container">
+                  <button class="option" onclick="checkAnswer(0)"></button>
+                  <button class="option" onclick="checkAnswer(1)"></button>
+                  <button class="option" onclick="checkAnswer(2)"></button>
+                </div>
+                <div id="result-container">
+                  <p id="result"></p>
+                </div>
+                <div id="score-container">
+                  <p>Correct Answers: <span id="correct-answers">0</span></p>
+                  <div id="lightsaber-container">
+                    <div id="ls-light" class="lightsaber-progress-bar"></div>
+                    <div id="ls-dark" class="lightsaber-progress-bar"></div>
+                  </div>
+                </div>
+                <div id="final-result-container">
+                  <h2 id="final-message"></h2>
+                  <button id="restart-button">Restart Quiz</button>
+                </div>
+              </div>
+            </main>
+          </div>
+          <script src="../JS.pages/js.ping-pong.js"></script>
+        </body>
+        </html>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../JS.pages/js.ping-pong.js"></script>
 </body>
 </html>
