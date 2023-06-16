@@ -3,10 +3,6 @@ function activateDarkSide() {
     // Cambia los estilos del body y otros elementos a los estilos del lado oscuro
     document.body.style.backgroundColor = "#0a0a0a";
     document.body.style.color = "#ff0000";
-    document.nav.style.backgroundColor = "#0a0a0a";
-    document.nav.style.color = "#ff0000";
-    //reemplazar imagen de fondo
-    document.image.src = './imagenes/sith knigths.jpg'
 }
  
   // Función para aplicar los estilos del lado de la fuerza
@@ -14,9 +10,6 @@ function activateDarkSide() {
     // Restaura los estilos del body y otros elementos al lado de la fuerza
     document.body.style.backgroundColor = "#00008b";
     document.body.style.color = "#fff";
-    document.nav.style.backgroundColor = "#00008b";
-    document.nav.style.color = "#fff";
-    // Agrega otras modificaciones de estilo necesarias para el lado de la fuerza
   }
   
   // Función para cambiar entre el lado oscuro y el lado de la fuerza
@@ -69,10 +62,3 @@ function saveData() {
 // Asociar los eventos a los elementos HTML
 document.getElementById("guardar").addEventListener("click", saveData);
 
-
-
-
-//let nombre = document.getElementById(nombre);
-//function bienvenida() {
-//let mensaje = `Bienvenido/a ${nombre}. Yo soy el Padawan Lucas Aguero y voy a enseñarte sobre algunos de nuestros personajes de STAR WARS`;
-//bienvenida();
